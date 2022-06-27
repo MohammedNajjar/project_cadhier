@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9F9F9">
+
+    <TextView
+        android:id="@+id/name_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Product"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="#071523"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021-04-07-13: 59: 08"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="#979797"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="@id/name_pro"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="#AF4C5B"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/name_pro"
+        app:layout_constraintStart_toStartOf="@id/name_pro"/>
+
+
+    <TextView
+        android:id="@+id/buy_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buying_price"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="#979797"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/buy"
+        app:layout_constraintStart_toStartOf="@+id/buy"/>
+
+    <TextView
+        android:id="@+id/selling_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selling_price"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="#979797"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/buy_price"
+        app:layout_constraintStart_toStartOf="@+id/buy_price"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="#979797"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/selling_buy"
+        app:layout_constraintStart_toStartOf="@+id/selling_buy"/>
+
+
+    <TextView
+        android:id="@+id/profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profit"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="#979797"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/quantity"
+        app:layout_constraintStart_toStartOf="@+id/quantity"/>
+
+
+    <TextView
+        android:id="@+id/tv_buy_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300$"
+        android:textColor="#1A2B3D"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buy_price"
+        app:layout_constraintEnd_toEndOf="@id/date"
+        app:layout_constraintTop_toTopOf="@id/buy_price" />
+
+    <TextView
+        android:id="@+id/tv_selling_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300$"
+        android:textColor="#1A2B3D"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/selling_buy"
+        app:layout_constraintEnd_toEndOf="@id/tv_buy_price"
+        app:layout_constraintTop_toTopOf="@id/selling_buy" />
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300$"
+        android:textColor="#1A2B3D"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/quantity"
+        app:layout_constraintEnd_toEndOf="@id/tv_selling_price"
+        app:layout_constraintTop_toTopOf="@id/quantity" />
+
+    <TextView
+        android:id="@+id/tv_profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300$"
+        android:textColor="#1A2B3D"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profit"
+        app:layout_constraintEnd_toEndOf="@id/tv_quantity"
+        app:layout_constraintTop_toTopOf="@id/profit" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#979797"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="@id/profit"
+        app:layout_constraintEnd_toEndOf="@id/tv_profit"
+        app:layout_constraintTop_toBottomOf="@id/profit"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

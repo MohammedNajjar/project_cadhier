@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/et_name_pro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:text="-"/>
+
+
+        <TextView
+            android:id="@+id/et_category_pro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/et_price_pro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:text="-"/>
+
+
+    <TextView
+        android:id="@+id/et_quantity_pro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:text="-"/>
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/ic_delete_pro"
+        android:layout_gravity="center" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#939EA8"/>
+
+</LinearLayout>

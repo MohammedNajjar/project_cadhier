@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".AboutActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_23ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/img_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_about"
+        app:layout_constraintEnd_toEndOf="@+id/tv_about"
+        app:layout_constraintStart_toStartOf="@+id/tv_about"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about" />
+
+    <TextView
+        android:id="@+id/tv_AppCashier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/img_about"
+        app:layout_constraintEnd_toEndOf="@id/img_about"
+        app:layout_constraintTop_toBottomOf="@id/img_about"
+        android:text="@string/app_cashier"
+        android:textSize="@dimen/_17ssp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="#2C3E50"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_30sdp"/>
+
+    <TextView
+        android:id="@+id/tv_Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_AppCashier"
+        app:layout_constraintEnd_toEndOf="@id/tv_AppCashier"
+        app:layout_constraintTop_toBottomOf="@id/tv_AppCashier"
+        android:text="@string/updated_on"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="#2C3E50"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_Update"
+        app:layout_constraintEnd_toEndOf="@id/tv_Update"
+        app:layout_constraintTop_toBottomOf="@id/tv_Update"
+        android:text="Programmer Anas Al-Hammy"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="#2C3E50"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/tv_name_1"
+        app:layout_constraintEnd_toEndOf="@id/tv_name_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_1"
+        android:text="Programmer Mohammed Al-Rantissi"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="#2C3E50"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/tv_name_2"
+        app:layout_constraintEnd_toEndOf="@id/tv_name_2"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_2"
+        android:text="Programmer Osama Al-Astal"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="#2C3E50"
+        android:textStyle="bold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

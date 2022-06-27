@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".ChangeLanguageActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_language"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_25ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"/>
+
+
+    <TextView
+        android:id="@+id/tv_select_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_language"
+        app:layout_constraintTop_toBottomOf="@id/tv_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/poppins_regular"
+        android:background="#979797"
+        android:padding="@dimen/_5sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_select_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/English"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:text="English" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+        <RadioButton
+            android:id="@+id/Chinese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Chinese"
+            android:buttonTint="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <RadioButton
+            android:id="@+id/Spanish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Spanish"
+            android:padding="@dimen/_10sdp"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <RadioButton
+            android:id="@+id/Hindi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Hindi"
+            android:buttonTint="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+
+        <RadioButton
+            android:id="@+id/Arabic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Arabic"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+
+        <RadioButton
+            android:id="@+id/Portuguese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Portuguese"
+            android:buttonTint="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+
+        <RadioButton
+            android:id="@+id/Russian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Russian"
+            android:buttonTint="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+
+
+        <RadioButton
+            android:id="@+id/Japanese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Japanese"
+            android:buttonTint="@color/black"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <RadioButton
+            android:id="@+id/German"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="German"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <RadioButton
+            android:id="@+id/turkish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Turkish"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <RadioButton
+            android:id="@+id/french"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="French"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black" />
+
+    </RadioGroup>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

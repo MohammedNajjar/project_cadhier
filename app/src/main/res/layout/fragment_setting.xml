@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#F9F9F9"
+    tools:context=".ui.setting.SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/change_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_100sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:drawableEnd="@drawable/ic_arrow_setting"
+            android:padding="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/change_password" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <TextView
+            android:id="@+id/change_language"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/_100sdp"
+            android:textSize="@dimen/_13ssp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:drawableEnd="@drawable/ic_arrow_setting"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/change_language" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <TextView
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/_100sdp"
+            android:textSize="@dimen/_13ssp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:drawableEnd="@drawable/ic_arrow_setting"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/notifications" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <TextView
+            android:id="@+id/About"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/_100sdp"
+            android:textSize="@dimen/_13ssp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:drawableEnd="@drawable/ic_arrow_setting"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/about" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#0082C0"/>
+
+        <TextView
+            android:id="@+id/Privacy_Policy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/_100sdp"
+            android:textSize="@dimen/_13ssp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:drawableEnd="@drawable/ic_arrow_setting"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/privacy_policy" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".PrivacyPolicyActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_Privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_policy"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_25ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="@id/toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Privacy" >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:text="electronic medical clinic An easy-to-use, low-cost, multi-user patient file management program suitable for doctors and small medical clinics. In addition, we offer a program
+        modification service and the issuance of special copies that suit the requirement
+        of large governmental and private medical facilities.Modifying the program
+        and issuing special copies to suit the requirements of large governmental
+        and private medical facilities.The program, as the name suggests, is a simple
+        program, but not in the sense that it lacks features or the correctness of
+        organizing information, but in the sense of the simplicity of dealing
+        and managing patients' files.ullamcorper eu aliquet ut, dapibus vel justo.
+        Sed sagittis, elit eget hendrerit lacinia, elit est
+        vehicula orci, eget facilisis ipsum tortor at
+        ipsum. Praesent dictum, nulla ut tempor
+        convallis, est nulla hendrerit risus, nec
+        posuere urna risus non nisl. Integer quis eros
+        et purus sagittis condimentum nec sed nisi.
+        Cras varius volutpat viverra. Orci varius
+        natoque penati…"
+            android:textColor="#707070"
+            android:fontFamily="@font/poppins_regular" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

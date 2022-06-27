@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SheetDialogDebtFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_filter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="3dp"
+            android:background="#C3E0E0E1"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Filter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintEnd_toStartOf="@+id/img_cancel_dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/img_cancel_dialog"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_cencel_dialog"
+            app:layout_constraintBottom_toBottomOf="@id/tv_filter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_filter"
+            app:layout_constraintTop_toTopOf="@id/tv_filter" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="#C3E0E0E1"
+            app:layout_constraintTop_toBottomOf="@id/tv_filter" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="All"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/high_price"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/tv_category"
+            app:layout_constraintTop_toBottomOf="@+id/tv_category" />
+
+
+        <Button
+            android:id="@+id/high_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="High Price Debt"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/low_price"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/all"
+            app:layout_constraintTop_toTopOf="@id/all" />
+
+        <Button
+            android:id="@+id/low_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="Low Price Debt"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/high_price"
+            app:layout_constraintTop_toTopOf="@id/high_price" />
+
+
+
+        /////////////////////////////
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Year"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/all" />
+
+        <Button
+            android:id="@+id/all_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="All"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/high_price"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/tv_category"
+            app:layout_constraintTop_toBottomOf="@+id/tv_year" />
+
+
+        <Button
+            android:id="@+id/year_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="2022"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/year_21"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/all_year"
+            app:layout_constraintTop_toTopOf="@id/all_year" />
+
+        <Button
+            android:id="@+id/year_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="2021"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/year_2019"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/year_22"
+            app:layout_constraintTop_toTopOf="@id/year_22" />
+
+        <Button
+            android:id="@+id/year_2019"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="2019"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/year_21"
+            app:layout_constraintTop_toTopOf="@id/year_21" />
+
+
+
+
+        <Button
+            android:id="@+id/year_2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="2018"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/canned"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/all_year"
+            app:layout_constraintTop_toBottomOf="@+id/all_year" />
+
+
+        <Button
+            android:id="@+id/year_2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="2017"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/year_2016"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/year_2018"
+            app:layout_constraintTop_toTopOf="@id/year_2018" />
+
+        <Button
+            android:id="@+id/year_2016"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="2016"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/year_2019"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/year_2017"
+            app:layout_constraintTop_toTopOf="@id/year_2017" />
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Month"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/year_2018" />
+
+        <Button
+            android:id="@+id/all_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="All"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/january"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/tv_date"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+
+        <Button
+            android:id="@+id/january"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="January"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/february"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/all_month"
+            app:layout_constraintTop_toTopOf="@id/all_month" />
+
+        <Button
+            android:id="@+id/february"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="February"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/march"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/january"
+            app:layout_constraintTop_toTopOf="@id/january" />
+
+        <Button
+            android:id="@+id/march"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="March"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/drinks"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/february"
+            app:layout_constraintTop_toTopOf="@id/february" />
+
+
+        <Button
+            android:id="@+id/april"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="April"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/mayo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/all"
+            app:layout_constraintTop_toBottomOf="@+id/all_month" />
+
+
+        <Button
+            android:id="@+id/mayo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="Mayo"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/june"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/april"
+            app:layout_constraintTop_toTopOf="@id/april" />
+
+        <Button
+            android:id="@+id/june"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="June"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/july"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mayo"
+            app:layout_constraintTop_toTopOf="@id/mayo" />
+
+        <Button
+            android:id="@+id/july"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_btns_fiter"
+            android:text="July"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/march"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/june"
+            app:layout_constraintTop_toTopOf="@id/june" />
+
+
+        <Button
+            android:id="@+id/august"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="August"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/september"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/april"
+            app:layout_constraintTop_toBottomOf="@id/april" />
+
+        <Button
+            android:id="@+id/september"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="September"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/october"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/august"
+            app:layout_constraintTop_toBottomOf="@id/april" />
+
+        <Button
+            android:id="@+id/october"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="October"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/dec"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/september"
+            app:layout_constraintTop_toBottomOf="@id/april" />
+
+        <Button
+            android:id="@+id/dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btns_fiter"
+            android:text="Dec"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@id/july"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/october"
+            app:layout_constraintTop_toBottomOf="@id/july" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/august"
+            app:layout_constraintTop_toBottomOf="@+id/august" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/dec"
+            app:layout_constraintStart_toStartOf="@+id/august"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+
+        <Button
+            android:id="@+id/btn_apply_filter"
+            android:layout_width="@dimen/_218sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btn_apply_filter"
+            android:text="Apply Filters"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <Button
+            android:id="@+id/btn_clear_filter"
+            android:layout_width="@dimen/_218sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_btn_clean_filter"
+            android:text="Clear Filters"
+            android:textAllCaps="false"
+            android:textColor="#2C3E50"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_apply_filter"
+            app:layout_constraintStart_toStartOf="@+id/btn_apply_filter"
+            app:layout_constraintTop_toBottomOf="@+id/btn_apply_filter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

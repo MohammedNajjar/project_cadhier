@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".AddCreditorDataActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A2B3D"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/TextToolBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="-"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/white"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tv_creditor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/creditor_name"
+        android:textColor="#5A5A5A"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/et_creditor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#707070"
+        android:textSize="@dimen/_11ssp"
+        android:textColorHint="#707070"
+        android:padding="@dimen/_10sdp"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/background_et_edit_product"
+        android:hint="@string/enter_the_creditor_s_name"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_creditor_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_creditor_name"/>
+
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/phone_number"
+        android:textColor="#5A5A5A"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_creditor_name" />
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#707070"
+        android:textSize="@dimen/_11ssp"
+        android:textColorHint="#707070"
+        android:padding="@dimen/_10sdp"
+        android:inputType="phone"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/background_et_edit_product"
+        android:hint="@string/enter_the_phone_number"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone_number"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/address"
+        android:textColor="#5A5A5A"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_number" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#707070"
+        android:textSize="@dimen/_11ssp"
+        android:textColorHint="#707070"
+        android:padding="@dimen/_10sdp"
+        android:inputType="textPostalAddress"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/background_et_edit_product"
+        android:hint="@string/enter_the_address"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"/>
+
+
+    <TextView
+        android:id="@+id/tv_total_debt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/total_debt"
+        android:textColor="#5A5A5A"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_address" />
+
+    <EditText
+        android:id="@+id/et_total_debt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#707070"
+        android:textSize="@dimen/_11ssp"
+        android:textColorHint="#707070"
+        android:padding="@dimen/_10sdp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/background_et_edit_product"
+        android:hint="@string/enter_the_total_debt"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_total_debt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_debt"/>
+
+
+    <TextView
+        android:id="@+id/tv_debt_Paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/debt_paid"
+        android:textColor="#5A5A5A"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_total_debt" />
+
+    <EditText
+        android:id="@+id/et_debt_Paid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#707070"
+        android:textSize="@dimen/_11ssp"
+        android:textColorHint="#707070"
+        android:padding="@dimen/_10sdp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/background_et_edit_product"
+        android:hint="@string/enter_the_debt_paid"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_total_debt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_debt_Paid"/>
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/date"
+        android:textColor="#5A5A5A"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_debt_Paid" />
+
+
+
+    <TextView
+        android:id="@+id/et_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#707070"
+        android:textSize="@dimen/_11ssp"
+        android:textColorHint="#707070"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/background_et_edit_product"
+        android:hint="@string/enter_thedate"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@id/tv_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"/>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="@dimen/_145sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:background="@drawable/background_btn_create_account"
+        app:layout_constraintEnd_toEndOf="@+id/et_date"
+        app:layout_constraintStart_toStartOf="@+id/et_date"
+        app:layout_constraintTop_toBottomOf="@+id/et_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

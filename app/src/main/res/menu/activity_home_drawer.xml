@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inventory"
+            android:icon="@drawable/ic_inventory"
+            android:title="@string/inventory" />
+        <item
+            android:id="@+id/nav_casher"
+            android:icon="@drawable/ic_casher"
+            android:title="@string/casher" />
+
+        <item
+            android:id="@+id/nav_billing"
+            android:icon="@drawable/ic_billing"
+            android:title="@string/billing" />
+        <item
+            android:id="@+id/nav_debts"
+            android:icon="@drawable/ic_debts"
+            android:title="@string/debts" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
+
+    </group>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+</menu>

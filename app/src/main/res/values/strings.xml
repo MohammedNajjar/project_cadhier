@@ -1,0 +1,292 @@
+<resources>
+    <!--English-->
+    <string name="app_name">Cashier</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inventory</string>
+    <string name="menu_gallery">Casher</string>
+    <string name="menu_slideshow">Billing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_homw">HomeActivity</string>
+    <string name="title_activity_cashier">CashierActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="todo">TODO</string>
+    <string name="app_cashier">App Cashier</string>
+    <string name="updated_on">Updated on 12/3/2022</string>
+    <string name="creditor_name">Creditor Name</string>
+    <string name="enter_the_creditor_s_name">Enter The Creditor\'s Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_the_phone_number">Enter The Phone Number</string>
+    <string name="address">Address</string>
+    <string name="enter_the_address">Enter The Address</string>
+    <string name="total_debt">Total Debt</string>
+    <string name="enter_the_total_debt">Enter The Total Debt</string>
+    <string name="debt_paid">Debt Paid</string>
+    <string name="enter_the_debt_paid">Enter The Debt Paid</string>
+    <string name="date">Date</string>
+    <string name="enter_thedate">Enter Thedate</string>
+    <string name="save">Save</string>
+    <string name="add_product">Add product</string>
+    <string name="add_barcode">Add Barcode</string>
+    <string name="enter_the_barcode_number">Enter the Barcode Number</string>
+    <string name="name">Name</string>
+    <string name="enter_the_name">Enter the Name</string>
+    <string name="price_buy">Price Buy</string>
+    <string name="enter_the_price_buy">Enter the Price Buy</string>
+    <string name="quantity">Quantity</string>
+    <string name="enter_the_quantity">Enter the Quantity</string>
+    <string name="price_selling">Price Selling</string>
+    <string name="enter_the_price_selling">Enter the price Selling</string>
+    <string name="description">Description</string>
+    <string name="enter_the_description">Enter the description</string>
+    <string name="choose_department">Choose Department</string>
+    <string name="all_products">All Products</string>
+    <string name="change_language">Change Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="spanish">Spanish</string>
+    <string name="hindi">Hindi</string>
+    <string name="arabic">Arabic</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="russian">Russian</string>
+    <string name="japanese">Japanese</string>
+    <string name="german">German</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update">Update</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="verify_now">Verify Now</string>
+    <string name="creditor_data">Creditor Data</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="notes">Notes</string>
+    <string name="creditor_debt">Creditor Debt</string>
+    <string name="account_statement">Account Statement</string>
+    <string name="total_account">Total Account</string>
+    <string name="paid_account">Paid Account</string>
+    <string name="total_account2">Total Account :</string>
+    <string name="paying_amount">Paying Amount</string>
+    <string name="enter_the_pay_in_amount">Enter The Pay in Amount</string>
+    <string name="enter_the_date">Enter The Date</string>
+    <string name="enter_the_notes">Enter The Notes</string>
+    <string name="rated_debt">Rated Debt</string>
+    <string name="total_debt_today">Total Debt Today :</string>
+    <string name="total_sincere_debt">Total Sincere Debt :</string>
+    <string name="shaps">Shaps</string>
+    <string name="add_product_image">Add Product image</string>
+    <string name="enter_the_purchase_price">Enter The Purchase Price</string>
+    <string name="enter_the_selling_price">Enter The Selling Price</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="provide_your_mobile_number_for_which_want_n_to_reset_your_password">Provide your mobile number for which want \n to reset your password</string>
+    <string name="email_address_or_mobile_number">Email address or Mobile number</string>
+    <string name="send">Send</string>
+    <string name="notifications">Notifications</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="verify_your_phone">Verify Your Phone</string>
+    <string name="please_enter_the_code_that_was_sent_to_n_the_phone_number">Please enter the code that was sent to \n the phone number</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="cashier">Cashier</string>
+    <string name="deutz_chipsy">Deutz Chipsy</string>
+    <string name="price_buy2">Price Buy :</string>
+    <string name="price_selling2">Price Selling :</string>
+    <string name="barcode">Barcode</string>
+    <string name="selling_price">Selling Price</string>
+    <string name="buying_price">Buying Price</string>
+    <string name="profit">Profit</string>
+    <string name="create_account">Create account</string>
+    <string name="login">Login</string>
+    <string name="all_invoices">All Invoices</string>
+    <string name="sales_invoices">Sales Invoices</string>
+    <string name="purchase_invoices">Purchase Invoices</string>
+    <string name="today_s_bills">Today\'s Bills</string>
+    <string name="bills_of_the_n_month">Bills Of The\n Month</string>
+    <string name="bills_for_the_n_year">Bills For The \n Year</string>
+    <string name="add">Add</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="total">Total</string>
+    <string name="discount">Discount</string>
+    <string name="final_total">Final Total</string>
+    <string name="delete">Delete</string>
+    <string name="name_own">Name Owner</string>
+    <string name="please_enter_name_own">Please Enter Name Owner</string>
+    <string name="email_address">Email Address</string>
+    <string name="name_shop">Name Shop</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already Have Account?</string>
+    <string name="current_month_debt">Current Month Debt</string>
+    <string name="high_price_debt">High Price Debt</string>
+    <string name="low_price_debt">Low Price Debt</string>
+    <string name="debt_of_the_n_year">Debt Of The \n Year</string>
+    <string name="expired_n_debts">Expired \n Debts</string>
+    <string name="buy_price">Buy Price</string>
+    <string name="type">Type</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="paid_debt">Paid Debt</string>
+    <string name="current_debt">Current Debt</string>
+    <string name="email">Email</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or">OR</string>
+    <string name="don_t_have_account">Don\'t Have Account?</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="about">About</string>
+    <string name="name_owner_restaurant">Name owner restaurant</string>
+    <string name="restaurant_name">Restaurant name</string>
+    <string name="please_enter_creditor_name">Please Enter Creditor Name</string>
+    <string name="please_enter_address">Please Enter Address</string>
+    <string name="please_enter_debt_paid">Please Enter Debt Paid</string>
+    <string name="please_enter_phone_number">Please Enter Phone Number</string>
+    <string name="please_enter_total_debt">Please Enter Total Debt</string>
+    <string name="please_enter_date">Please Enter Date</string>
+    <string name="add_creditor_data">Update</string>
+    <string name="add_creditor_data_2">Add Creditor Data</string>
+    <string name="edit_creditor_data">Edit Creditor Data</string>
+    <string name="please_enter_bar_code">Please Enter BarCode</string>
+    <string name="please_enter_name">Please Enter Name</string>
+    <string name="please_enter_quantity">Please Enter Quantity</string>
+    <string name="please_enter_price_buy">Please Enter PriceBuy</string>
+    <string name="please_enter_price_selling">Please Enter PriceSelling</string>
+    <string name="please_enter_description">Please Enter Description</string>
+    <string name="the_product_already_added">The product has already been added. Please enter another product</string>
+    <string name="you_must_accept_this_permission">You Must accept this permission</string>
+    <string name="done_delete">Done Delete :</string>
+    <string name="error">error !</string>
+    <string name="password_updated">Password updated</string>
+    <string name="please_make_sure_the_password_matches">Please make sure the password matches</string>
+    <string name="please_confirm_the_old_password">Please confirm the old password</string>
+    <string name="please_enter_name_shop_eEmail">please Enter Name Shop</string>
+    <string name="please_enter_email">please Enter Email</string>
+    <string name="please_enter_mobile_number">please Enter Mobile Number</string>
+    <string name="please_enter_password">please Enter Password</string>
+    <string name="faild_to_upload_image">\"Faild to upload image: \"</string>
+    <string name="login_succeeded">Login succeeded</string>
+    <string name="please_check_the_information">Please check the information</string>
+    <string name="please_enter_paying_amount">Please Enter Paying Amount</string>
+    <string name="please_enter_note">Please Enter Note</string>
+    <string name="today_bills">Today Bills</string>
+    <string name="bills_month">Bills Month</string>
+    <string name="bills_year">Bills Year</string>
+    <string name="search_here">Search here …</string>
+    <string name="today_debt">Today Debt</string>
+    <string name="expired_debts">Expired Debts</string>
+    <string name="total_expired_debts">Total Expired Debts :</string>
+    <string name="debt_year">Debt Year</string>
+    <string name="total_debt_year">Total Debt Year :</string>
+    <string name="high_price_debts">High Price Debts</string>
+    <string name="total_high_price_debts">Total High Price Debts :</string>
+    <string name="low_price_debts">Low Price Debts</string>
+    <string name="Total_Low_Price_Debts">Total Low Price Debts :</string>
+    <string name="Debts_Month">Debts Month</string>
+    <string name="Total_Debt_Month">Total Debt Month :</string>
+    <string name="Delete_Item">Delete Item</string>
+    <string name="Do_you_Sure_you_want_Delete_Item">Do you Sure you want Delete Item ?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Delete">Delete</string>
+    <string name="Please_Enter_Your_Email">Please Enter Your Email</string>
+    <string name="Please_check_your_Email_Account">Please check your Email Account ,If you want to rest your password....</string>
+    <string name="Error_Occurred">Error Occurred</string>
+    <string name="Cashier">Cashier</string>
+    <string name="Inventory">Inventory</string>
+    <string name="Billing">Billing</string>
+    <string name="Debts">Debts</string>
+    <string name="Settings">Settings</string>
+    <string name="Finished">Finished</string>
+    <string name="Today_merchandise">\"Today\'s merchandise was bought for \"</string>
+    <string name="shekel">\" shekel\"</string>
+    <string name="Today_was_sold">\"Today it was sold for \"</string>
+    <string name="Product">\"Product \"</string>
+    <string name="is_about_to_expire">\" is about to expire\"</string>
+    <string name="Notification_Cashier">Notification Cashier</string>
+    <string name="please_Enter_an_Email">please Enter an Email</string>
+    <string name="please_Enter_an_Password">please Enter an Password</string>
+    <string name="Please_confirm_your_email_and_password">Please confirm your email and password</string>
+    <string name="On">On</string>
+    <string name="Off">Off</string>
+    <string name="About_app">About app</string>
+    <string name="It_is_an_application">It is an application that records supermarket data \n and write to him for treatment .</string>
+    <string name="Our_message">Our message</string>
+    <string name="Employing_the_latest">Employing the latest electronic technologies to \n bring the product closer</string>
+    <string name="Welcome_to_our">Welcome to our Application\n enjoy its services</string>
+    <string name="Edit_Data">Edit Data</string>
+    <string name="Edit_Accounts">Edit Accounts</string>
+    <string name="Create_Account">Create Account</string>
+    <string name="Login">Login</string>
+    <string name="Product_sold_out">Product sold out</string>
+    <string name="Product_Quantity_Finished">Product Quantity Finished</string>
+    <string name="This_item_is_not">This item is not available Please make sure you enter it first</string>
+    <string name="No_items_available">No items available</string>
+    <string name="Legumes">Legumes</string>
+    <string name="Snacks_and_Crackers">Snacks and Crackers</string>
+    <string name="Meat">Meat</string>
+    <string name="Fish">Fish</string>
+    <string name="Sauce">Sauce</string>
+    <string name="Dairy">Dairy</string>
+    <string name="Sweets">Sweets</string>
+    <string name="Vegetables_and_Fruits">Vegetables and Fruits</string>
+    <string name="Coffee">Coffee</string>
+    <string name="Canned_food">Canned food</string>
+    <string name="Cleaning_materials">Cleaning materials</string>
+    <string name="Home_needs">Home needs</string>
+    <string name="Drinks">Drinks</string>
+    <string name="turkish">Turkish</string>
+    <string name="french">French</string>
+    <string name="casher">Casher</string>
+    <string name="inventory">Inventory</string>
+    <string name="billing">Billing</string>
+    <string name="debts">Debts</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="spinner_category">
+        <item>Legumes</item>
+        <item>Snacks and Crackers</item>
+        <item>Meat</item>
+        <item>Fish</item>
+        <item>Sauce</item>
+        <item>Dairy</item>
+        <item>Sweets</item>
+        <item>Vegetables and Fruits</item>
+        <item>Coffee</item>
+        <item>Canned food</item>
+        <item>Cleaning materials</item>
+        <item>Home needs</item>
+        <item>Drinks</item>
+
+    </string-array>
+    <!--        <string name="privacy_policy">electronic medical clinic-->
+    <!--        An easy-to-use, low-cost, multi-user patient file management program-->
+    <!--        suitable for doctors and small medical clinics. In addition, we offer a program-->
+    <!--        modification service and the issuance of special copies that suit the requirement-->
+    <!--        of large governmental and private medical facilities.Modifying the program-->
+    <!--        and issuing special copies to suit the requirements of large governmental-->
+    <!--        and private medical facilities.The program, as the name suggests, is a simple-->
+    <!--        program, but not in the sense that it lacks features or the correctness of-->
+    <!--        organizing information, but in the sense of the simplicity of dealing-->
+    <!--        and managing patients' files.ullamcorper eu aliquet ut, dapibus vel justo.-->
+    <!--        Sed sagittis, elit eget hendrerit lacinia, elit est-->
+    <!--        vehicula orci, eget facilisis ipsum tortor at-->
+    <!--        ipsum. Praesent dictum, nulla ut tempor-->
+    <!--        convallis, est nulla hendrerit risus, nec-->
+    <!--        posuere urna risus non nisl. Integer quis eros-->
+    <!--        et purus sagittis condimentum nec sed nisi.-->
+    <!--        Cras varius volutpat viverra. Orci varius-->
+    <!--        natoque penati…</string>-->
+
+</resources>
